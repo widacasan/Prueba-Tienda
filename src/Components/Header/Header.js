@@ -4,8 +4,8 @@ import  '../../Components/Header/Header.css'
 const Header = () => {
   return (
     <header>
-      <img src={logo} alt="Logo de la Empresa" />
-      <h1>Tienda de Computadoras</h1>
+      <img src={logo} alt="Logo de la Empresa"  />
+      <h1 className='title'>Tienda de Computadoras</h1>
       <nav>
         <ul>
           <li><a href="#inicio">Inicio</a></li>
