@@ -1,10 +1,11 @@
-// src/Components/ProductCelect/ProductSection.js
+// ProductSection.js
+
 import React, { useState } from 'react';
 import Product from './Product';
-import ProductDetails from './ProductDetails'; 
+import ProductDetails from './ProductDetails';
 import './Product.css';
 
-const ProductSection = ({ products, onAddToCart, onDetailsClick }) => {
+const ProductSection = ({ products, onAddToCart }) => {
   const [selectedProductId, setSelectedProductId] = useState(null);
 
   const handleDetailsClick = (productId) => {
@@ -24,7 +25,7 @@ const ProductSection = ({ products, onAddToCart, onDetailsClick }) => {
             description={product.description}
             price={product.price}
             onAddToCart={onAddToCart}
-            onDetailsClick={handleDetailsClick} 
+            onDetailsClick={handleDetailsClick}
           />
         ))}
       </div>

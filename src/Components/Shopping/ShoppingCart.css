@@ -1,0 +1,69 @@
+.shopping-cart {
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif; 
+}
+
+.shopping-cart button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif; 
+  border-radius: 8px;
+}
+
+.shopping-cart button:hover {
+  background-color: #f0f0f0;
+}
+
+.shopping-cart a button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.shopping-cart a button:hover {
+  background-color: #45a049;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.cart-item img {
+  max-width: 100px;
+  margin-right: 10px;
+}
+
+.quantity-input {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.remove-button {
+  color: red;
+  cursor: pointer;
+}
+
+.total {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 20px;
+}

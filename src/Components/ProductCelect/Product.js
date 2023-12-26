@@ -9,10 +9,10 @@ const Product = ({ id, image, title, description, price, onAddToCart, onDetailsC
         <h3>{title}</h3>
         <p>{description}</p>
         <p>Precio: ${price}</p>
-        <button onClick={() => onAddToCart(id)}>Add to Cart</button>
+        <button onClick={() => onAddToCart(id)} className="details-button">Añadir 🛒</button>
         <Link to={`/details/${id}`} onClick={() => onDetailsClick(id)} className="details-button">
-  Detalles
-</Link>
+          Detalles
+        </Link>
       </div>
     </div>
   );
