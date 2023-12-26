@@ -2,6 +2,76 @@
   margin: 20px;
   font-family: 'Montserrat', sans-serif; 
 }
+.payment-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+.payment-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-modal label {
+  font-weight: bold;
+}
+
+.payment-modal input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.payment-modal .card-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.payment-modal .card-inputs input {
+  flex: 1; 
+}
+
+.payment-modal .card-inputs select {
+  width: 100px; 
+}
+
+.payment-modal button {
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.payment-modal button:hover {
+  background-color: #45a049;
+}
+
+
+.payment-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .shopping-cart button {
   margin-top: 10px;

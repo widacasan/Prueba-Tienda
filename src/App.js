@@ -14,14 +14,12 @@ const App = () => {
     const existingItem = cartItems.find((item) => item.id === productId);
 
     if (existingItem) {
-      // Si el producto ya está en el carrito, incrementar la cantidad
       setCartItems((prevItems) =>
         prevItems.map((item) =>
           item.id === productId ? { ...item, quantity: item.quantity + 1 } : item
         )
       );
     } else {
-      // Si el producto no está en el carrito, agregar uno nuevo
       setCartItems((prevItems) => [
         ...prevItems,
         { ...products.find((p) => p.id === productId), quantity: 1 },
@@ -118,6 +116,7 @@ const App = () => {
               element={
                 <ShoppingCart
                   cartItems={cartItems}
+                  setCartItems={setCartItems} 
                   onQuantityChange={handleQuantityChange}
                   onRemoveItem={handleRemoveItem}
                 />
