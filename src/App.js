@@ -3,8 +3,10 @@ import Header from './Components/Header/Header';
 import CustomSlider from './Components/Slider/Slider';
 import ProductSection from './Components/ProductCelect/ProductSection';
 import ShoppingCart from './Components/Shopping/ShoppingCart';
+import BlogSection from './Components/Blog/BlogSection';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ProductDetails from './Components/ProductCelect/ProductDetails';
+import SingleBlogPost from './Components/Blog/SingleBlogPost';
 
 
 const App = () => {
@@ -90,6 +92,49 @@ const App = () => {
     },
   ];
 
+  const blogPosts = [
+    {
+      title: 'Las Últimas Tendencias en Tecnología',
+      content: `
+        Descubre el fascinante mundo de la tecnología moderna a través de nuestro blog. 
+        En los últimos diez años, hemos sido testigos de un extraordinario avance, desde la inteligencia artificial hasta la realidad virtual, abarcando la automatización y la robótica. 
+        Exploraremos cómo estas innovaciones están dando forma al mundo que nos rodea y cómo pueden impactar nuestras vidas en el futuro cercano. ¿Estás listo para sumergirte en el futuro tecnológico?
+      `,
+      date: '15 de Octubre de 2023',
+      imageSrc: 'https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/11/tecnologia-nuevas-tendencias-2876787.jpg?tf=3840x',
+    },
+    {
+      title: 'Lo Más Vendido en Computadoras en 2023',
+      content: `
+        Adéntrate en el emocionante mundo de la tecnología del mañana mientras exploramos las joyas tecnológicas más destacadas de 2023. 
+        Desde las laptops ultradelgadas hasta los poderosos PC de alto rendimiento, analizaremos los productos más vendidos y las razones detrás de su popularidad. 
+        ¿Cuáles son las tendencias actuales en el mercado de computadoras? Acompáñanos en este viaje para descubrirlo.
+      `,
+      date: '15 de Diciembre de 2023',
+      imageSrc: 'https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/LJYRBB2SPZD3PDDS3KXK4KTIFY.jpg',
+    },
+    {
+      title: 'Explorando la Ciberseguridad del Futuro',
+      content: `
+        Sumérgete en el apasionante mundo de la ciberseguridad y descubre las últimas innovaciones que protegerán tu información en la era digital. 
+        Desde algoritmos avanzados hasta sistemas de defensa cibernética, este blog te guiará a través de las tendencias más importantes. 
+        ¿Estás preparado para fortalecer tu seguridad en línea y entender los desafíos que enfrentaremos en el futuro digital?
+      `,
+      date: '20 de Diciembre de 2023',
+      imageSrc: 'https://blog.lacnic.net/wp-content/uploads/2020/07/ciberseguridad-julio-2020-300x146.png',
+    },
+    {
+      title: 'El Impacto de la Inteligencia Artificial en la Vida Cotidiana',
+      content: `
+        Descubre cómo la inteligencia artificial está transformando la forma en que vivimos y trabajamos. 
+        Desde asistentes virtuales hasta sistemas de recomendación, exploraremos las aplicaciones cotidianas que hacen que la IA sea tan fascinante. 
+        ¿Cómo afectará esto a nuestras vidas en el futuro inmediato? Acompáñanos en este viaje hacia la revolución de la inteligencia artificial.
+      `,
+      date: '10 de Febrero de 2023',
+      imageSrc: 'https://conecta.tec.mx/sites/default/files/styles/header_full/public/2020-10/aplicaciones-inteligencia-artificial_0.jpg?itok=dnoSy1uR',
+    },
+  ];
+
  
 
   return (
@@ -98,6 +143,7 @@ const App = () => {
         <div>
           <Header />
           <Routes>
+            
             <Route
               path="/"
               element={
@@ -122,6 +168,11 @@ const App = () => {
                 />
               }
             />
+            <Route path="/blog" element={<BlogSection />} />
+  <Route
+    path="/blog/:postId"
+    element={<SingleBlogPost blogPosts={blogPosts} />}
+  />
           </Routes>
         </div>
       </Router>

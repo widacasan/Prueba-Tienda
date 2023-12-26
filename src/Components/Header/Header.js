@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../../assets/Logo.jpg'
 import  '../../Components/Header/Header.css'
 import { Link } from 'react-router-dom';
+
 const Header = () => {
   return (
     <header>
@@ -9,12 +10,12 @@ const Header = () => {
       <h1 className='title'>Tienda de Computadoras</h1>
       <nav>
         <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#blog">Blog</a></li>
+        <Link to="/">Inicio</Link>
+        <Link to="/">Productos</Link>
+          <Link to="/blog">Blog</Link>
           <li><a href="#acerca">Acerca de Nosotros</a></li>
           <li><a href="#contacto">Contacto</a></li>
-          <li><Link to="/cart">Carrito</Link></li>
+          <Link to="/cart">Carrito</Link>
         </ul>
       </nav>
     </header>

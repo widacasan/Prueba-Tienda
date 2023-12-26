@@ -1,0 +1,41 @@
+/* BlogPost.css */
+.blog-post {
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif; 
+    
+  }
+  
+  .blog-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    
+  }
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #4caf50; 
+    color: #ffffff; 
+  }
+  
+  
+  
+  .date {
+    color: #777;
+  }
+
+  a {
+    text-decoration: none; 
+  }
+  
+  
+  .blog-post img {
+    border: none; 
+  }
+  
