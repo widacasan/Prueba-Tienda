@@ -1,100 +1,110 @@
 .slider-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .slider-item {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.5s ease;
-    position: relative;
-  }
-  
-  .slider-item img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .description-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .slider-item:hover .caption {
-    opacity: 1;
-  }
-  
-  .caption {
-    position: absolute;
-    text-align: center;
-    color: white;
-    opacity: 0;
-    transition: opacity 0.3s ease; 
-  }
-  
-  .caption:hover {
-    opacity: 1; 
-  }
-  
-  .button-container {
-    margin-top: 20px; 
-  }
-  
-  .details-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #c30100; 
-    color: #fff; 
-    border: none;
-    cursor: pointer;
-    border-radius: 8px; 
-    transition: background-color 0.3s ease; 
-  }
-  
-  .details-button:hover {
-    background-color: #9b0100; 
-  }
-  
-  .product-description{
-    margin-top: 20px;
-  font-family: 'Montserrat', sans-serif;
-  }
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease;
+  position: relative;
+}
+
+.slider-item img {
+  width: 100%;
+  height: auto;
+}
+
+.description-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.slider-item:hover .caption {
+  opacity: 1;
+}
+
+.caption {
+  position: absolute;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.caption:hover {
+  opacity: 1;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.details-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #c30100;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+  background-color: #9b0100;
+}
+
+.product-description {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.next {
+  right: 10px;
+}
+
+.prev {
+  left: 10px;
+}
+
+@media (max-width: 768px) {
   .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    cursor: pointer;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border: none;
-    outline: none;
-    transition: background-color 0.3s ease;
-    z-index: 1;
+    font-size: 20px;
   }
-  
-  .arrow:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  
-  .next {
-    right: 10px;
-  }
-  
+
+  .next,
   .prev {
-    left: 10px;
+    font-size: 20px;
   }
-  
+}

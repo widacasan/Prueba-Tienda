@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Tienda de Computadoras
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`Creador:`William David Camacho Sanchez
+`Correo:`widacasan@gmail.com
 
-## Available Scripts
+Este proyecto es una tienda en línea desarrollada en React que ofrece una variedad de productos tecnológicos. Permite a los usuarios explorar productos, agregarlos al carrito de compras, y realizar compras de manera fácil y segura.
 
-In the project directory, you can run:
+## Características principales
 
-### `npm start`
+- `Exploración de Productos:` Los usuarios pueden explorar una amplia gama de productos tecnológicos, desde laptops hasta accesorios.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- `Carrito de Compras:` Los usuarios pueden agregar productos al carrito de compras y realizar un seguimiento de los artículos seleccionados.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- `Detalles del Producto:` Se proporcionan detalles detallados de cada producto, incluida una descripción, imagen y precio.
 
-### `npm test`
+- `Registro de Usuarios:` Los usuarios pueden registrarse proporcionando su nombre, correo electrónico y contraseña.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `Compra Segura:` Proceso de compra seguro con opciones de pago y confirmación de pedido.
 
-### `npm run build`
+## Tecnologias utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `React:` Un framework de JavaScript utilizado para construir interfaces de usuario interactivas y reutilizables.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `JavaScript:` El lenguaje de programación principal utilizado en el proyecto para la lógica y funcionalidad del lado del cliente.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `HTML:` Se utiliza para estructurar y presentar el contenido web.
 
-### `npm run eject`
+- `CSS:` Se utiliza para aplicar estilos y diseños al proyecto.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- `Chart.js:` Una biblioteca de gráficos de código abierto que proporciona una amplia gama de gráficos interactivos y personalizables.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `React Datepicker:` Una biblioteca de componentes de selección de fechas para React, utilizada para el componente de selección de rango de fechas en el proyecto.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Instalación y uso
 
-## Learn More
+1. Clona este repositorio en tu máquina local.
+2.  Ve al directorio del proyecto:
+``` bash
+$cd Prueba-Tienda
+```
+3. Ejecuta el siguiente comando para instalar las dependencias: 
+```bash
+$ npm install 
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Ejecuta el siguiente comando para iniciar la aplicación: 
+```bash
+$ npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Abre tu navegador y accede a http://localhost:3000 para ver la aplicación en funcionamiento.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Estructura del Proyecto
 
-### Analyzing the Bundle Size
+El proyecto sigue la siguiente estructura de directorios:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+/prueba
+├── /node_modules
+├── /public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+├── /src
+│   ├── /assets
+│   │   ├── Logo.jpg
+│   │   ├── Producto1.jpg
+│   │   ├── Producto2.jpg
+│   │   └── Producto3.jpg
+│   ├── /Components
+│   │   ├── /About
+│   │   ├── /Blog
+│   │   ├── /Contacto
+│   │   ├── /Header
+│   │   ├── /Pay
+│   │   ├── /ProductCelect
+│   │   ├── /Registro
+│   │   ├── /Shopping
+│   │   └── /Slider
+│   │       ├── Slider.css
+│   │       └── Slider.js
+│   ├── App.js
+│   ├── App.test.js
+│   ├── index.js
+│   ├── reportWebVitals.js
+│   └── setupTests.js
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
+```
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -1,42 +1,49 @@
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import Modal from "react-modal";
+import PaymentGateway from "../Pay/PaymentGateway";
+import "./ShoppingCart.css";
 
-import React, { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import Modal from 'react-modal'; 
-import PaymentGateway from '../Pay/PaymentGateway';
-import './ShoppingCart.css';
+Modal.setAppElement("#root");
 
-Modal.setAppElement('#root'); 
+const ShoppingCart = ({
+  cartItems,
+  setCartItems,
+  onQuantityChange,
+  onRemoveItem,
+}) => {
+  const [total, setTotal] = useState(calculateTotal());
+  const [isPaymentOpen, setIsPaymentOpen] = useState(false);
+  const navigate = useNavigate();
 
-const ShoppingCart = ({ cartItems, setCartItems, onQuantityChange, onRemoveItem }) => {
-    const [total, setTotal] = useState(calculateTotal());
-    const [isPaymentOpen, setIsPaymentOpen] = useState(false);
-    const navigate = useNavigate();
-  
-    useEffect(() => {
-      setTotal(calculateTotal());
-      localStorage.setItem('cart', JSON.stringify(cartItems));
-      // eslint-disable-next-line
-    }, [cartItems]);
-  
-    function calculateTotal() {
-      return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
-    }
-  
-    const handlePaymentComplete = () => {
-      alert('¡Pago exitoso! Gracias por tu compra.');
-      setIsPaymentOpen(false);
-      setCartItems([]); 
-      localStorage.removeItem('cart'); 
-      navigate('/');
-    };
-  
-    const handlePaymentOpen = () => {
-      setIsPaymentOpen(true);
-    };
-  
-    const handlePaymentClose = () => {
-      setIsPaymentOpen(false);
-    };
+  useEffect(() => {
+    setTotal(calculateTotal());
+    localStorage.setItem("cart", JSON.stringify(cartItems));
+    // eslint-disable-next-line
+  }, [cartItems]);
+
+  function calculateTotal() {
+    return cartItems.reduce(
+      (total, item) => total + item.price * item.quantity,
+      0
+    );
+  }
+
+  const handlePaymentComplete = () => {
+    alert("¡Pago exitoso! Gracias por tu compra.");
+    setIsPaymentOpen(false);
+    setCartItems([]);
+    localStorage.removeItem("cart");
+    navigate("/");
+  };
+
+  const handlePaymentOpen = () => {
+    setIsPaymentOpen(true);
+  };
+
+  const handlePaymentClose = () => {
+    setIsPaymentOpen(false);
+  };
 
   return (
     <div className="shopping-cart">
@@ -45,7 +52,9 @@ const ShoppingCart = ({ cartItems, setCartItems, onQuantityChange, onRemoveItem 
         <button>Volver a la Página Principal</button>
       </Link>
       {cartItems.length === 0 ? (
-        <p>El carrito está vacío. ¡Agrega productos desde la página de productos!</p>
+        <p>
+          El carrito está vacío. ¡Agrega productos desde la página de productos!
+        </p>
       ) : (
         <>
           {cartItems.map((item) => (
@@ -60,9 +69,14 @@ const ShoppingCart = ({ cartItems, setCartItems, onQuantityChange, onRemoveItem 
                   type="number"
                   className="quantity-input"
                   value={item.quantity}
-                  onChange={(e) => onQuantityChange(item.id, parseInt(e.target.value, 10))}
+                  onChange={(e) =>
+                    onQuantityChange(item.id, parseInt(e.target.value, 10))
+                  }
                 />
-                <span onClick={() => onRemoveItem(item.id)} className="remove-button">
+                <span
+                  onClick={() => onRemoveItem(item.id)}
+                  className="remove-button"
+                >
                   Eliminar
                 </span>
               </div>
@@ -80,7 +94,10 @@ const ShoppingCart = ({ cartItems, setCartItems, onQuantityChange, onRemoveItem 
             className="payment-modal"
             overlayClassName="payment-overlay"
           >
-            <PaymentGateway total={total} onPaymentComplete={handlePaymentComplete} />
+            <PaymentGateway
+              total={total}
+              onPaymentComplete={handlePaymentComplete}
+            />
           </Modal>
         </>
       )}

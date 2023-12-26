@@ -1,12 +1,11 @@
-
-import React, { useState } from 'react';
-import './RegistrationForm.css'; 
+import React, { useState } from "react";
+import "./RegistrationForm.css";
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    password: '',
+    name: "",
+    email: "",
+    password: "",
   });
 
   const handleChange = (e) => {
@@ -15,9 +14,9 @@ const RegistrationForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-   
-    console.log('Formulario de registro enviado:', formData);
-    alert('¡Registro exitoso!');
+
+    console.log("Formulario de registro enviado:", formData);
+    alert("¡Registro exitoso!");
   };
 
   return (
@@ -26,15 +25,30 @@ const RegistrationForm = () => {
       <form onSubmit={handleSubmit}>
         <label>
           Nombre:
-          <input type="text" name="name" value={formData.name} onChange={handleChange} />
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+          />
         </label>
         <label>
           Correo Electrónico:
-          <input type="email" name="email" value={formData.email} onChange={handleChange} />
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+          />
         </label>
         <label>
           Contraseña:
-          <input type="password" name="password" value={formData.password} onChange={handleChange} />
+          <input
+            type="password"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
+          />
         </label>
         <button type="submit">Registrarse</button>
       </form>

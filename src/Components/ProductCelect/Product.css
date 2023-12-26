@@ -1,6 +1,6 @@
 .product-section {
   margin-top: 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .product-list {
@@ -31,7 +31,7 @@
 
 .product-info {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .product button {
@@ -57,7 +57,7 @@
   padding: 8px 16px;
   cursor: pointer;
   border-radius: 8px;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .product .details-button:hover {
@@ -67,30 +67,27 @@
 .title {
   font-size: 24px;
   margin-bottom: 10px;
-  
 }
 
 .description {
   font-size: 16px;
   margin-bottom: 15px;
- 
 }
 
 .price {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
-   
 }
 
 .product-details {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .product-image {
   width: 100%;
-  max-height: 400px; 
+  max-height: 400px;
   object-fit: contain;
   margin-bottom: 20px;
 }
@@ -102,10 +99,23 @@
   padding: 8px 16px;
   cursor: pointer;
   font-size: 16px;
-  margin-top: 20px; 
+  margin-top: 20px;
   border-radius: 8px;
 }
 
 .back-button:hover {
   background-color: #9b0100;
+}
+
+@media (max-width: 1200px) {
+  .product {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    width: calc(100% - 20px);
+    margin: 10px auto;
+  }
 }

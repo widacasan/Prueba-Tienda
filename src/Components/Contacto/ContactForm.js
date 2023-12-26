@@ -1,13 +1,12 @@
-
-import React, { useState } from 'react';
-import './ContactForm.css';  
+import React, { useState } from "react";
+import "./ContactForm.css";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    celular: '',
-    message: '',
+    name: "",
+    email: "",
+    celular: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -16,9 +15,8 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    alert('¡El formulario se envió con éxito!');
 
+    alert("¡El formulario se envió con éxito!");
   };
 
   return (
@@ -27,25 +25,50 @@ const ContactForm = () => {
       <form onSubmit={handleSubmit} className="form">
         <label className="label">
           Nombre:
-          <input type="text" name="name" value={formData.name} onChange={handleChange} className="input" />
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            className="input"
+          />
         </label>
         <br />
         <label className="label">
           Correo Electrónico:
-          <input type="email" name="email" value={formData.email} onChange={handleChange} className="input" />
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            className="input"
+          />
         </label>
         <br />
         <label className="label">
           Celular:
-          <input type="tel" name="celular" value={formData.celular} onChange={handleChange} className="input" />
+          <input
+            type="tel"
+            name="celular"
+            value={formData.celular}
+            onChange={handleChange}
+            className="input"
+          />
         </label>
         <br />
         <label className="label">
           Mensaje:
-          <textarea name="message" value={formData.message} onChange={handleChange} className="textarea" />
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            className="textarea"
+          />
         </label>
         <br />
-        <button type="submit" className="button">Enviar</button>
+        <button type="submit" className="button">
+          Enviar
+        </button>
       </form>
     </div>
   );

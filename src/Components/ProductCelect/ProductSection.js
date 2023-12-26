@@ -1,9 +1,7 @@
-// ProductSection.js
-
-import React, { useState } from 'react';
-import Product from './Product';
-import ProductDetails from './ProductDetails';
-import './Product.css';
+import React, { useState } from "react";
+import Product from "./Product";
+import ProductDetails from "./ProductDetails";
+import "./Product.css";
 
 const ProductSection = ({ products, onAddToCart }) => {
   const [selectedProductId, setSelectedProductId] = useState(null);

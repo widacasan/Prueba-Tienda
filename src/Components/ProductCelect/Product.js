@@ -1,7 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Product = ({ id, image, title, description, price, onAddToCart, onDetailsClick }) => {
+const Product = ({
+  id,
+  image,
+  title,
+  description,
+  price,
+  onAddToCart,
+  onDetailsClick,
+}) => {
   return (
     <div className="product">
       <img src={image} alt={title} />
@@ -9,8 +17,14 @@ const Product = ({ id, image, title, description, price, onAddToCart, onDetailsC
         <h3>{title}</h3>
         <p>{description}</p>
         <p>Precio: ${price}</p>
-        <button onClick={() => onAddToCart(id)} className="details-button">Añadir 🛒</button>
-        <Link to={`/details/${id}`} onClick={() => onDetailsClick(id)} className="details-button">
+        <button onClick={() => onAddToCart(id)} className="details-button">
+          Añadir 🛒
+        </button>
+        <Link
+          to={`/details/${id}`}
+          onClick={() => onDetailsClick(id)}
+          className="details-button"
+        >
           Detalles
         </Link>
       </div>

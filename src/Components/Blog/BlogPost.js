@@ -1,6 +1,5 @@
-
-import React from 'react';
-import './BlogPost.css';
+import React from "react";
+import "./BlogPost.css";
 
 const BlogPost = ({ title, content, date, imageSrc }) => {
   return (
@@ -9,7 +8,9 @@ const BlogPost = ({ title, content, date, imageSrc }) => {
       <h2>{title}</h2>
       <p className="date">{date}</p>
       <p>{content}</p>
-      <button onClick={() => window.history.back()} className='button'>Regresar</button>
+      <button onClick={() => window.history.back()} className="button">
+        Regresar
+      </button>
     </div>
   );
 };

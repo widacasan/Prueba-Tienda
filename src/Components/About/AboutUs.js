@@ -1,6 +1,5 @@
-
-import React from 'react';
-import './AboutUs.css';
+import React from "react";
+import "./AboutUs.css";
 
 const AboutUs = () => {
   return (
@@ -9,19 +8,21 @@ const AboutUs = () => {
       <div className="company-info">
         <div className="company-description">
           <p>
-            ¡Bienvenido a Tienda de Computadores, tu destino número uno para productos tecnológicos de vanguardia!
+            ¡Bienvenido a Tienda de Computadores, tu destino número uno para
+            productos tecnológicos de vanguardia!
           </p>
           <p>
-            En Tienda de Computadores, nos apasiona proporcionar soluciones tecnológicas innovadoras que
-            transformen la manera en que vives, trabajas y te diviertes. Desde laptops ultradelgadas
-            hasta potentes PC de alto rendimiento, ofrecemos una amplia gama de productos para
+            En Tienda de Computadores, nos apasiona proporcionar soluciones
+            tecnológicas innovadoras que transformen la manera en que vives,
+            trabajas y te diviertes. Desde laptops ultradelgadas hasta potentes
+            PC de alto rendimiento, ofrecemos una amplia gama de productos para
             satisfacer todas tus necesidades.
           </p>
         </div>
         <div className="company-image">
           <img
             src="https://www.bizneo.com/blog/wp-content/uploads/2019/10/caracteristicas-del-trabajo-en-equipo.webp"
-            alt="Logo de TechHub"
+            alt="Logo de Tienda de computadoras"
             className="company-logo"
           />
         </div>
@@ -41,9 +42,9 @@ const AboutUs = () => {
             <h4>John Doe</h4>
             <p>CEO y Fundador</p>
             <p>
-              John es un apasionado de la tecnología y ha liderado Tienda de Computadores desde sus humildes
-              comienzos. Su visión es llevar la última tecnología a hogares y empresas de todo el
-              mundo.
+              John es un apasionado de la tecnología y ha liderado Tienda de
+              Computadores desde sus humildes comienzos. Su visión es llevar la
+              última tecnología a hogares y empresas de todo el mundo.
             </p>
           </div>
         </div>
@@ -60,29 +61,36 @@ const AboutUs = () => {
             <h4>Jane Smith</h4>
             <p>Directora de Tecnología</p>
             <p>
-              Jane lidera nuestro equipo de desarrollo de productos y garantiza que cada dispositivo
-              que vendemos cumpla con los estándares más altos de calidad y rendimiento.
+              Jane lidera nuestro equipo de desarrollo de productos y garantiza
+              que cada dispositivo que vendemos cumpla con los estándares más
+              altos de calidad y rendimiento.
             </p>
           </div>
         </div>
       </div>
 
-      
       <div className="footer-links">
         <div>
           <h3>Redes Sociales</h3>
           <ul>
             <li>
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Facebook
               </a>
             </li>
             <li>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Twitter
               </a>
             </li>
-            
           </ul>
         </div>
 

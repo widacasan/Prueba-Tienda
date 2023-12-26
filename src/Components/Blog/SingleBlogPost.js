@@ -1,7 +1,6 @@
-
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import BlogPost from './BlogPost';
+import React from "react";
+import { useParams } from "react-router-dom";
+import BlogPost from "./BlogPost";
 
 const SingleBlogPost = ({ blogPosts }) => {
   const { postId } = useParams();
