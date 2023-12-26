@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ProductDetails from './Components/ProductCelect/ProductDetails';
 import SingleBlogPost from './Components/Blog/SingleBlogPost';
 import ContactForm from './Components/Contacto/ContactForm';
+import RegistrationForm from './Components/Registro/RegistrationForm';
 
 
 const App = () => {
@@ -171,6 +172,7 @@ const App = () => {
             />
             <Route path="/blog" element={<BlogSection />} />
             <Route path="/contacto" element={<ContactForm />} />
+            <Route path="/registro" element={<RegistrationForm />} />
   <Route
     path="/blog/:postId"
     element={<SingleBlogPost blogPosts={blogPosts} />}

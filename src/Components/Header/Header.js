@@ -11,6 +11,7 @@ const Header = () => {
       <nav>
         <ul>
         <Link to="/">Inicio</Link>
+        <li><Link to="/registro">Registro</Link></li>
         <Link to="/">Productos</Link>
           <Link to="/blog">Blog</Link>
           <li><a href="#acerca">Acerca de Nosotros</a></li>

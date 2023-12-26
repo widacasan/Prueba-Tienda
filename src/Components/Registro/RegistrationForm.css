@@ -1,43 +1,48 @@
 
-.container {
+.form-container {
     max-width: 600px;
     margin: 0 auto;
     padding: 60px;
     font-family: 'Montserrat', sans-serif;
-    
   }
   
-  .heading {
+  .form-container h2 {
     font-size: 24px;
     margin-bottom: 20px;
   }
   
-  .form {
+  .form-container form {
     display: flex;
     flex-direction: column;
   }
   
-  .label {
+  .form-container label {
     margin-bottom: 10px;
   }
   
-  .input,
-  .textarea {
+  .form-container input,
+  .form-container textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     border-radius: 8px;
   }
   
-  .textarea {
+  .form-container textarea {
     resize: vertical;
   }
   
-  .button {
+  .form-container button {
     background-color: #c30100;
     color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .form-container button:hover {
+    background-color: #9b0100;
   }
   
