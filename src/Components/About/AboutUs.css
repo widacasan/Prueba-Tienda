@@ -1,0 +1,100 @@
+
+.about-us-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .about-us-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .company-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .company-description {
+    width: 60%;
+  }
+  
+  .company-image {
+    width: 35%;
+  }
+  
+  .company-logo {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .team-section {
+    margin-bottom: 30px;
+  }
+  
+  .team-heading {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .team-member {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .team-member-image {
+    width: 30%;
+  }
+  
+  .member-avatar {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .team-member-info {
+    width: 70%;
+    padding-left: 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .footer-links div {
+    width: 48%;
+  }
+  
+  .footer-links h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px;
+    background-color: #f0f0f0; 
+    border-radius: 4px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+    color: #555;
+    background-color: #ddd; 
+  }
+  

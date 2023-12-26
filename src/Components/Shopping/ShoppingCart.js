@@ -71,7 +71,7 @@ const ShoppingCart = ({ cartItems, setCartItems, onQuantityChange, onRemoveItem 
           <div className="total">
             <p>Total: ${total.toFixed(2)}</p>
           </div>
-          <button onClick={handlePaymentOpen}>Ir a Pasarela de Pagos</button>
+          <button onClick={handlePaymentOpen}>Continuar pago</button>
 
           <Modal
             isOpen={isPaymentOpen}

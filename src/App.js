@@ -9,6 +9,7 @@ import ProductDetails from './Components/ProductCelect/ProductDetails';
 import SingleBlogPost from './Components/Blog/SingleBlogPost';
 import ContactForm from './Components/Contacto/ContactForm';
 import RegistrationForm from './Components/Registro/RegistrationForm';
+import AboutUs from './Components/About/AboutUs';
 
 
 const App = () => {
@@ -168,11 +169,15 @@ const App = () => {
                   onQuantityChange={handleQuantityChange}
                   onRemoveItem={handleRemoveItem}
                 />
+                
               }
             />
+            
+            
             <Route path="/blog" element={<BlogSection />} />
             <Route path="/contacto" element={<ContactForm />} />
             <Route path="/registro" element={<RegistrationForm />} />
+            <Route path="/about-us" element={<AboutUs />} />
   <Route
     path="/blog/:postId"
     element={<SingleBlogPost blogPosts={blogPosts} />}
@@ -180,7 +185,9 @@ const App = () => {
           </Routes>
         </div>
       </Router>
+      
     </div>
+    
   );
 };
   

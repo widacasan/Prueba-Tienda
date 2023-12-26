@@ -77,9 +77,9 @@
   margin-top: 10px;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #ffffff;
-  color: #000000;
-  border: 1px solid #000000;
+  background-color: #c30100;
+  color: #fff;
+  border: 1px solid #fff;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
@@ -89,14 +89,14 @@
 }
 
 .shopping-cart button:hover {
-  background-color: #f0f0f0;
+  background-color: #9b0100;
 }
 
 .shopping-cart a button {
   margin-top: 10px;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #4caf50;
+  background-color: #c30100;
   color: #ffffff;
   border: none;
   cursor: pointer;
@@ -106,7 +106,7 @@
 }
 
 .shopping-cart a button:hover {
-  background-color: #45a049;
+  background-color: #9b0100;
 }
 
 .cart-item {
